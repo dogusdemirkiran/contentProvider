@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/idText"/>
+
+    <EditText
+        android:id="@+id/telText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TEL"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nameText"/>
+
+    <Button
+        android:id="@+id/kaydetButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telText"
+        android:layout_marginTop="20dp"
+        android:text="KAYDET"/>
+
+    <Button
+        android:id="@+id/silButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kaydetButon"
+        android:layout_marginTop="20dp"
+        android:text="SİL"/>
+
+
+    <Button
+        android:id="@+id/guncelleButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/silButon"
+        android:layout_marginTop="20dp"
+        android:text="GÜNCELLE"/>
+
+    <Button
+        android:id="@+id/getirButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guncelleButon"
+        android:layout_marginTop="20dp"
+        android:text="GETİR"/>
+
+
+    <TextView
+        android:id="@+id/cikti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cikti"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/getirButon"/>
+
+</RelativeLayout>
